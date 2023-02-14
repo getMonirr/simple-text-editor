@@ -19,14 +19,14 @@
         <h1 class="text-center my-8 text-5xl font-bold">My text Editor</h1>
     </header>
     <main>
-        <section class="border border-2 border-black p-4 bg-gray-400 divide-y-2 divide-black space-y-4">
+        <section id="text-editor" class="border border-2 border-black p-4 bg-gray-400 divide-y-2 divide-black space-y-4">
             <div class="grid grid-cols-3 items-center">
                 <div>
-                    <i data-type="fontWeight" name="bold"
+                    <i data-type="fontWeight" data-boardKey="KeyB" name="bold"
                         class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-bold"></i>
-                    <i data-type="fontStyle" name="italic"
+                    <i data-type="fontStyle" data-boardKey="KeyI" name="italic"
                         class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-italic"></i>
-                    <i data-type="textDecoration" name="underline"
+                    <i data-type="textDecoration" data-boardKey="KeyY" name="underline"
                         class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-underline"></i>
                 </div>
                 <div class="space-x-4">
