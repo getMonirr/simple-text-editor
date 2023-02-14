@@ -11,7 +11,7 @@ const textEditor = document.getElementById('text-editor');
 function typeHandle(e) {
     const { dataset } = e.target;
     // textArea.style[dataset.type] = attributes.name.value;
-    textArea.classList.toggle(dataset.type)
+    textArea.classList.toggle(dataset.type);
     e.target.classList.toggle('active')
 }
 
@@ -31,7 +31,8 @@ inputs.forEach(input => {
 textEditor.addEventListener('keypress',(e) => {
     keyboardShortcut.forEach(key => {
         if(e.ctrlKey && e.code === key.dataset.boardkey){
-            textArea.classList.toggle(key.dataset.type)
+            textArea.classList.toggle(key.dataset.type);
+            key.classList.toggle('active');
         }
     });
 })
