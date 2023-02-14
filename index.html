@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- bootstrap icon -->
+    <script src="https://kit.fontawesome.com/8e77f3c3f9.js" crossorigin="anonymous"></script>
+    <!-- text editor css  -->
+    <link rel="stylesheet" href="style/text.css">
+</head>
+
+<body class="bg-sky-300 container mx-auto">
+    <header>
+        <h1 class="text-center my-8 text-5xl font-bold">My text Editor</h1>
+    </header>
+    <main>
+        <section class="border border-2 border-black p-4 bg-gray-400 divide-y-2 divide-black space-y-4">
+            <div class="grid grid-cols-3 items-center">
+                <div>
+                    <i data-type="fontWeight" name="bold"
+                        class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-bold"></i>
+                    <i data-type="fontStyle" name="italic"
+                        class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-italic"></i>
+                    <i data-type="textDecoration" name="underline"
+                        class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-underline"></i>
+                </div>
+                <div class="space-x-4">
+                    <i data-type="textAlignLeft" name="left"
+                        class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-align-left"></i>
+                    <i data-type="textAlignCenter" name="center"
+                        class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-align-center"></i>
+                    <i data-type="textAlignRight" name="right"
+                        class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-align-right"></i>
+                    <i data-type="textAlignJustify" name="justify"
+                        class="cursor-pointer hover:bg-sky-600 hover:text-white active:bg-sky-600 active:text-white p-2 transition fa-solid fa-align-justify"></i>
+                </div>
+                <div class="flex gap-2 justify-end">
+                    <input data-type="fontSize" type="number" name="font-size" id="font-size" class="bg-transparent w-[50px] border pl-2"
+                        value="16">
+                    <input data-type="color" type="color" name="text-color" id="text-color">
+                </div>
+            </div>
+            <div class="pt-4">
+                <textarea class="w-full focus:outline-none p-4" name="textArea" id="text-area" cols="30"
+                    rows="10"></textarea>
+            </div>
+        </section>
+    </main>
+
+    <!-- text editor js -->
+    <script src="script/textEditor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.fontWeight {
+  font-weight: bold;
+}
+.fontStyle {
+  font-style: italic;
+}
+.textDecoration {
+  text-decoration: underline;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.textAlignRight {
+  text-align: right;
+}
+.textAlignJustify {
+  text-align: justify;
+}
+.active {
+  background-color: rgb(2 132 199);
+  color: white;
+}
